@@ -3,9 +3,31 @@ export const credibilityConfig = {
   badge: {
     text: "Trusted Partners",
     icon: (
-      <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="1" y="3" width="4" height="6" stroke="#37322F" strokeWidth="1" fill="none" />
-        <rect x="7" y="1" width="4" height="8" stroke="#37322F" strokeWidth="1" fill="none" />
+      <svg
+        width="12"
+        height="10"
+        viewBox="0 0 12 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="1"
+          y="3"
+          width="4"
+          height="6"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
+        <rect
+          x="7"
+          y="1"
+          width="4"
+          height="8"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
         <rect x="2" y="4" width="1" height="1" fill="#37322F" />
         <rect x="3.5" y="4" width="1" height="1" fill="#37322F" />
         <rect x="2" y="5.5" width="1" height="1" fill="#37322F" />
@@ -22,7 +44,8 @@ export const credibilityConfig = {
 
   header: {
     title: "OUR CLIENTS",
-    subtitle: "At PRGEEQ, we strive to be of value, rather to be a success! Our greatest assets' are our Clients!"
+    subtitle:
+      "At PRGEEQ, we strive to be of value, rather to be a success! Our greatest assets' are our Clients!",
   },
 
   // Partner/Client logos
@@ -73,11 +96,12 @@ export const credibilityConfig = {
     mobileCols: 2,
     desktopCols: 4,
   },
-}
+};
 
 // Styling Configuration - Central place to modify styling
 export const credibilityStyles = {
-  container: "w-full border-b border-border flex flex-col justify-center items-center",
+  container:
+    "w-full border-b border-border flex flex-col justify-center items-center",
 
   headerSection: {
     container:
@@ -98,7 +122,8 @@ export const credibilityStyles = {
   },
 
   logoGrid: {
-    container: "self-stretch border-border flex justify-center items-start border-t border-b-0",
+    container:
+      "self-stretch border-border flex justify-center items-start border-t border-b-0",
     gridWrapper:
       "flex-1 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-0 border-l border-r border-border",
     logoItem:
@@ -111,9 +136,10 @@ export const credibilityStyles = {
   },
 
   decorativePattern: {
-    container: "w-4 sm:w-6 md:w-8 lg:w-12 self-stretch relative overflow-hidden",
+    container:
+      "w-4 sm:w-6 md:w-8 lg:w-12 self-stretch relative overflow-hidden",
     wrapper:
       "w-[120px] sm:w-[140px] md:w-[162px] left-[-40px] sm:left-[-50px] md:left-[-58px] top-[-120px] absolute flex flex-col justify-start items-start",
     line: "self-stretch h-3 sm:h-4 rotate-[-45deg] origin-top-left outline outline-[0.5px] outline-[rgba(3,7,18,0.08)] outline-offset-[-0.25px]",
   },
-}
+};

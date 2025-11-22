@@ -1,10 +1,10 @@
-import type { LucideIcon } from "lucide-react"
-import { footerStyles } from "@/config/footer.config"
+import type { LucideIcon } from "lucide-react";
+import { footerStyles } from "@/config/footer.config";
 
 interface SocialLinkProps {
-  href: string
-  icon: LucideIcon
-  ariaLabel: string
+  href: string;
+  icon: LucideIcon;
+  ariaLabel: string;
 }
 
 export function SocialLink({ href, icon: Icon, ariaLabel }: SocialLinkProps) {
@@ -16,5 +16,5 @@ export function SocialLink({ href, icon: Icon, ariaLabel }: SocialLinkProps) {
     >
       <Icon className="w-full h-full" />
     </a>
-  )
+  );
 }

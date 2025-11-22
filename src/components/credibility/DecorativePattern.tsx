@@ -1,4 +1,4 @@
-import { credibilityStyles } from "@/config/credibility.config"
+import { credibilityStyles } from "@/config/credibility.config";
 
 export function DecorativePattern() {
   return (
@@ -9,5 +9,5 @@ export function DecorativePattern() {
         ))}
       </div>
     </div>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import { PageHero } from "@/components/PageHero"
-import { aboutPageConfig, aboutPageStyles } from "@/config/aboutPage.config"
-import { ValuesSection } from "@/components/about/ValuesSection"
-import { StatsSection } from "@/components/about/StatsSection"
-import { ContactCard } from "@/components/common/ContactCard"
+import { PageHero } from "@/components/PageHero";
+import { aboutPageConfig, aboutPageStyles } from "@/config/aboutPage.config";
+import { ValuesSection } from "@/components/about/ValuesSection";
+import { StatsSection } from "@/components/about/StatsSection";
+import { ContactCard } from "@/components/common/ContactCard";
 
 export default function AboutPage() {
   return (
@@ -34,5 +34,5 @@ export default function AboutPage() {
         styles={aboutPageStyles.contact}
       />
     </main>
-  )
+  );
 }

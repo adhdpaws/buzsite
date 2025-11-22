@@ -3,20 +3,75 @@ export const servicesConfig = {
   badge: {
     text: "Our Services",
     icon: (
-      <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="1" y="1" width="3" height="3" stroke="#37322F" strokeWidth="1" fill="none" />
-        <rect x="5" y="1" width="3" height="3" stroke="#37322F" strokeWidth="1" fill="none" />
-        <rect x="9" y="1" width="2" height="3" stroke="#37322F" strokeWidth="1" fill="none" />
-        <rect x="1" y="5" width="3" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-        <rect x="5" y="5" width="3" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
-        <rect x="9" y="5" width="2" height="4" stroke="#37322F" strokeWidth="1" fill="none" />
+      <svg
+        width="12"
+        height="10"
+        viewBox="0 0 12 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="1"
+          y="1"
+          width="3"
+          height="3"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
+        <rect
+          x="5"
+          y="1"
+          width="3"
+          height="3"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
+        <rect
+          x="9"
+          y="1"
+          width="2"
+          height="3"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
+        <rect
+          x="1"
+          y="5"
+          width="3"
+          height="4"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
+        <rect
+          x="5"
+          y="5"
+          width="3"
+          height="4"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
+        <rect
+          x="9"
+          y="5"
+          width="2"
+          height="4"
+          stroke="#37322F"
+          strokeWidth="1"
+          fill="none"
+        />
       </svg>
     ),
   },
 
   header: {
     title: "Comprehensive Educational Solutions",
-    subtitle: "Empowering educators and learners with innovative technology solutions designed for the modern classroom.",
+    subtitle:
+      "Empowering educators and learners with innovative technology solutions designed for the modern classroom.",
   },
 
   // Service cards
@@ -92,11 +147,12 @@ export const servicesConfig = {
       },
     },
   ],
-}
+};
 
 // Styling Configuration - Central place to modify styling
 export const servicesStyles = {
-  container: "w-full border-b border-border flex flex-col justify-center items-center",
+  container:
+    "w-full border-b border-border flex flex-col justify-center items-center",
 
   headerSection: {
     container:
@@ -117,7 +173,8 @@ export const servicesStyles = {
   },
 
   servicesGrid: {
-    container: "self-stretch flex justify-center items-start py-8 sm:py-12 md:py-16",
+    container:
+      "self-stretch flex justify-center items-start py-8 sm:py-12 md:py-16",
     gridWrapper:
       "w-full px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6 auto-cols-fr",
   },
@@ -135,9 +192,10 @@ export const servicesStyles = {
   },
 
   decorativePattern: {
-    container: "w-4 sm:w-6 md:w-8 lg:w-12 self-stretch relative overflow-hidden",
+    container:
+      "w-4 sm:w-6 md:w-8 lg:w-12 self-stretch relative overflow-hidden",
     wrapper:
       "w-[120px] sm:w-[140px] md:w-[162px] left-[-40px] sm:left-[-50px] md:left-[-58px] top-[-120px] absolute flex flex-col justify-start items-start",
     line: "self-stretch h-3 sm:h-4 rotate-[-45deg] origin-top-left outline outline-[0.5px] outline-[rgba(3,7,18,0.08)] outline-offset-[-0.25px]",
   },
-}
+};

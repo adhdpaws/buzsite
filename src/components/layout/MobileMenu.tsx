@@ -1,67 +1,73 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { X, ChevronDown } from "lucide-react"
-import { navbarStyles } from "@/config/navbar.config"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { X, ChevronDown } from "lucide-react";
+import { navbarStyles } from "@/config/navbar.config";
 
 interface MobileMenuProps {
-  isOpen: boolean
-  onClose: () => void
+  isOpen: boolean;
+  onClose: () => void;
   navigation: Array<{
-    label: string
-    href: string
+    label: string;
+    href: string;
     dropdownItems?: Array<{
-      label: string
-      href: string
-    }>
-  }>
-  brandName: string
+      label: string;
+      href: string;
+    }>;
+  }>;
+  brandName: string;
   cta: {
-    label: string
-    href: string
-  }
+    label: string;
+    href: string;
+  };
 }
 
-export function MobileMenu({ isOpen, onClose, navigation, brandName, cta }: MobileMenuProps) {
-  const [openDropdowns, setOpenDropdowns] = useState<Set<string>>(new Set())
+export function MobileMenu({
+  isOpen,
+  onClose,
+  navigation,
+  brandName,
+  cta,
+}: MobileMenuProps) {
+  const [openDropdowns, setOpenDropdowns] = useState<Set<string>>(new Set());
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset"
+      document.body.style.overflow = "unset";
     }
     return () => {
-      document.body.style.overflow = "unset"
-    }
-  }, [isOpen])
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   // Close mobile menu on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape" && isOpen) {
-        onClose()
+        onClose();
       }
-    }
-    window.addEventListener("keydown", handleEscape)
-    return () => window.removeEventListener("keydown", handleEscape)
-  }, [isOpen, onClose])
+    };
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [isOpen, onClose]);
 
   const toggleDropdown = (label: string) => {
     setOpenDropdowns((prev) => {
-      const newSet = new Set(prev)
+      const newSet = new Set(prev);
       if (newSet.has(label)) {
-        newSet.delete(label)
+        newSet.delete(label);
       } else {
-        newSet.add(label)
+        newSet.add(label);
       }
-      return newSet
-    })
-  }
+      return newSet;
+    });
+  };
 
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   return (
     <>
@@ -81,9 +87,7 @@ export function MobileMenu({ isOpen, onClose, navigation, brandName, cta }: Mobi
       >
         {/* Mobile Menu Header */}
         <div className={navbarStyles.mobile.header}>
-          <span className={navbarStyles.mobile.brandText}>
-            {brandName}
-          </span>
+          <span className={navbarStyles.mobile.brandText}>{brandName}</span>
           <button
             type="button"
             onClick={onClose}
@@ -144,5 +148,5 @@ export function MobileMenu({ isOpen, onClose, navigation, brandName, cta }: Mobi
         </div>
       </aside>
     </>
-  )
+  );
 }

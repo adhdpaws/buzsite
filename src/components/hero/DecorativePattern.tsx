@@ -1,9 +1,9 @@
 interface DecorativePatternProps {
   styles: {
-    container: string
-    wrapper: string
-    line: string
-  }
+    container: string;
+    wrapper: string;
+    line: string;
+  };
 }
 
 export function DecorativePattern({ styles }: DecorativePatternProps) {
@@ -15,5 +15,5 @@ export function DecorativePattern({ styles }: DecorativePatternProps) {
         ))}
       </div>
     </aside>
-  )
+  );
 }

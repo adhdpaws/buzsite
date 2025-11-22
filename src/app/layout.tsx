@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Prgeeq - Transforming Education Through Innovation",
-  description: "Educational technology solutions for academia, publishers, corporates, and more",
+  description:
+    "Educational technology solutions for academia, publishers, corporates, and more",
 };
 
 export default function RootLayout({
@@ -38,7 +39,9 @@ export default function RootLayout({
         </a>
         <div className="flex min-h-screen flex-col">
           <Navbar />
-          <main id="main-content" className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
           <FooterSection />
         </div>
       </body>

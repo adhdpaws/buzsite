@@ -1,6 +1,9 @@
-import { PageHero } from "@/components/PageHero"
-import { JobListing } from "@/components/careers/JobListing"
-import { careersPageConfig, careersPageStyles } from "@/config/careersPage.config"
+import { PageHero } from "@/components/PageHero";
+import { JobListing } from "@/components/careers/JobListing";
+import {
+  careersPageConfig,
+  careersPageStyles,
+} from "@/config/careersPage.config";
 
 export default function CareersPage() {
   return (
@@ -17,5 +20,5 @@ export default function CareersPage() {
         styles={careersPageStyles.jobs}
       />
     </main>
-  )
+  );
 }

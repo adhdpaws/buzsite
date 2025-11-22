@@ -1,24 +1,24 @@
-import { StepsList } from "@/components/common/StepsList"
+import { StepsList } from "@/components/common/StepsList";
 
 interface Value {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
 interface ValuesSectionProps {
-  badge: string
-  values: Value[]
+  badge: string;
+  values: Value[];
   styles: {
-    container: string
-    content: string
-    badge: string
+    container: string;
+    content: string;
+    badge: string;
     valuesList: {
-      container: string
-      item: string
-      title: string
-      description: string
-    }
-  }
+      container: string;
+      item: string;
+      title: string;
+      description: string;
+    };
+  };
 }
 
 export function ValuesSection({ badge, values, styles }: ValuesSectionProps) {
@@ -28,9 +28,9 @@ export function ValuesSection({ badge, values, styles }: ValuesSectionProps) {
         <h2 id="values-heading" className={styles.badge}>
           {badge}
         </h2>
-        
+
         <StepsList steps={values} styles={styles.valuesList} />
       </div>
     </section>
-  )
+  );
 }

@@ -1,13 +1,13 @@
-import type { ReactNode } from "react"
+import type { ReactNode } from "react";
 
 interface BadgeProps {
-  icon: ReactNode
-  text: string
+  icon: ReactNode;
+  text: string;
   styles: {
-    container: string
-    icon: string
-    text: string
-  }
+    container: string;
+    icon: string;
+    text: string;
+  };
 }
 
 export function Badge({ icon, text, styles }: BadgeProps) {
@@ -16,5 +16,5 @@ export function Badge({ icon, text, styles }: BadgeProps) {
       <div className={styles.icon}>{icon}</div>
       <div className={styles.text}>{text}</div>
     </div>
-  )
+  );
 }

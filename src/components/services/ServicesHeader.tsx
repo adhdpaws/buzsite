@@ -1,26 +1,32 @@
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 
 interface ServicesHeaderProps {
   badge: {
-    text: string
-    icon: React.ReactNode
-  }
-  title: string
-  subtitle: string
+    text: string;
+    icon: React.ReactNode;
+  };
+  title: string;
+  subtitle: string;
   styles: {
-    container: string
-    innerWrapper: string
-    title: string
-    subtitle: string
-  }
+    container: string;
+    innerWrapper: string;
+    title: string;
+    subtitle: string;
+  };
   badgeStyles: {
-    container: string
-    icon: string
-    text: string
-  }
+    container: string;
+    icon: string;
+    text: string;
+  };
 }
 
-export function ServicesHeader({ badge, title, subtitle, styles, badgeStyles }: ServicesHeaderProps) {
+export function ServicesHeader({
+  badge,
+  title,
+  subtitle,
+  styles,
+  badgeStyles,
+}: ServicesHeaderProps) {
   return (
     <header className={styles.container}>
       <div className={styles.innerWrapper}>
@@ -32,5 +38,5 @@ export function ServicesHeader({ badge, title, subtitle, styles, badgeStyles }: 
         <p className={styles.subtitle}>{subtitle}</p>
       </div>
     </header>
-  )
+  );
 }

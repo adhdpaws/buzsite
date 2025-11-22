@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Menu } from "lucide-react"
-import { navbarStyles } from "@/config/navbar.config"
+import { useState } from "react";
+import { Menu } from "lucide-react";
+import { navbarStyles } from "@/config/navbar.config";
 
 interface MobileMenuButtonProps {
-  onOpen: () => void
+  onOpen: () => void;
 }
 
 export function MobileMenuButton({ onOpen }: MobileMenuButtonProps) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    setIsOpen(true)
-    onOpen()
-  }
+    setIsOpen(true);
+    onOpen();
+  };
 
   return (
     <button
@@ -26,5 +26,5 @@ export function MobileMenuButton({ onOpen }: MobileMenuButtonProps) {
     >
       <Menu className="w-6 h-6" aria-hidden="true" />
     </button>
-  )
+  );
 }

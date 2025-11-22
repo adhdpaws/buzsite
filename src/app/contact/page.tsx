@@ -1,7 +1,10 @@
-import { contactPageConfig, contactPageStyles } from "@/config/contactPage.config"
-import { ContactHero } from "@/components/contact/ContactHero"
-import { MapSection } from "@/components/contact/MapSection"
-import { MobileContactInfo } from "@/components/contact/MobileContactInfo"
+import {
+  contactPageConfig,
+  contactPageStyles,
+} from "@/config/contactPage.config";
+import { ContactHero } from "@/components/contact/ContactHero";
+import { MapSection } from "@/components/contact/MapSection";
+import { MobileContactInfo } from "@/components/contact/MobileContactInfo";
 
 export default function ContactPage() {
   return (
@@ -26,5 +29,5 @@ export default function ContactPage() {
         styles={contactPageStyles.mobileContactInfo}
       />
     </main>
-  )
+  );
 }

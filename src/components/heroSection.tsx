@@ -1,5 +1,5 @@
-import { heroConfig, heroStyles } from "@/config/hero.config"
-import { HeroContent } from "./hero/HeroContent"
+import { heroConfig, heroStyles } from "@/config/hero.config";
+import { HeroContent } from "./hero/HeroContent";
 
 export function HeroSection() {
   return (
@@ -14,5 +14,5 @@ export function HeroSection() {
         />
       </div>
     </section>
-  )
+  );
 }

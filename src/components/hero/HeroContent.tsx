@@ -1,36 +1,42 @@
-import Link from "next/link"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 interface HeroContentProps {
   badge: {
-    text: string
-  }
-  headline: string
-  subtitle: string
+    text: string;
+  };
+  headline: string;
+  subtitle: string;
   cta: {
     primary: {
-      text: string
-      url: string
-    }
+      text: string;
+      url: string;
+    };
     secondary: {
-      text: string
-      url: string
-    }
-  }
+      text: string;
+      url: string;
+    };
+  };
   styles: {
-    content: string
-    badgeWrapper: string
-    badge: string
-    headline: string
-    subtitle: string
-    ctaGroup: string
-    primaryButton: string
-    secondaryButton: string
-  }
+    content: string;
+    badgeWrapper: string;
+    badge: string;
+    headline: string;
+    subtitle: string;
+    ctaGroup: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
 }
 
-export function HeroContent({ badge, headline, subtitle, cta, styles }: HeroContentProps) {
+export function HeroContent({
+  badge,
+  headline,
+  subtitle,
+  cta,
+  styles,
+}: HeroContentProps) {
   return (
     <div className={styles.content}>
       <div className="flex flex-col gap-4 sm:gap-5 md:gap-6">
@@ -42,7 +48,7 @@ export function HeroContent({ badge, headline, subtitle, cta, styles }: HeroCont
         <h1 className={styles.headline}>{headline}</h1>
         <p className={styles.subtitle}>{subtitle}</p>
       </div>
-      
+
       <div className={styles.ctaGroup}>
         <Button asChild className={styles.primaryButton}>
           <Link href={cta.primary.url} aria-label={cta.primary.text}>
@@ -56,5 +62,5 @@ export function HeroContent({ badge, headline, subtitle, cta, styles }: HeroCont
         </Button>
       </div>
     </div>
-  )
+  );
 }

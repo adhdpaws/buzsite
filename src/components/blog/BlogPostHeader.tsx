@@ -1,30 +1,30 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { ArrowLeft, ArrowDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+import Link from "next/link";
+import { ArrowLeft, ArrowDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 interface BlogPostHeaderProps {
-  date: string
-  category: string
-  readingTime: string
-  title: string
-  description: string
+  date: string;
+  category: string;
+  readingTime: string;
+  title: string;
+  description: string;
   styles: {
-    container: string
-    metaSection: string
-    metaItem: string
-    metaLabel: string
-    metaValue: string
-    separator: string
-    contentSection: string
-    title: string
-    description: string
-    actionSection: string
-    backButton: string
-    readMoreButton: string
-  }
+    container: string;
+    metaSection: string;
+    metaItem: string;
+    metaLabel: string;
+    metaValue: string;
+    separator: string;
+    contentSection: string;
+    title: string;
+    description: string;
+    actionSection: string;
+    backButton: string;
+    readMoreButton: string;
+  };
 }
 
 export function BlogPostHeader({
@@ -39,8 +39,8 @@ export function BlogPostHeader({
     window.scrollBy({
       top: window.innerHeight * 0.8,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   return (
     <header className={styles.container}>
@@ -91,5 +91,5 @@ export function BlogPostHeader({
         </Button>
       </div>
     </header>
-  )
+  );
 }

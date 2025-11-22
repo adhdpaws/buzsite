@@ -1,17 +1,23 @@
-"use client"
+"use client";
 
-import { faqStyles } from "@/config/faq.config"
-import { ChevronIcon } from "./ChevronIcon"
+import { faqStyles } from "@/config/faq.config";
+import { ChevronIcon } from "./ChevronIcon";
 
 interface FAQItemProps {
-  question: string
-  answer: string
-  isOpen: boolean
-  onToggle: () => void
-  index: number
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onToggle: () => void;
+  index: number;
 }
 
-export function FAQItem({ question, answer, isOpen, onToggle, index }: FAQItemProps) {
+export function FAQItem({
+  question,
+  answer,
+  isOpen,
+  onToggle,
+  index,
+}: FAQItemProps) {
   return (
     <div className={faqStyles.faqItem.container}>
       <button
@@ -38,5 +44,5 @@ export function FAQItem({ question, answer, isOpen, onToggle, index }: FAQItemPr
         <div className={faqStyles.faqItem.answer}>{answer}</div>
       </div>
     </div>
-  )
+  );
 }

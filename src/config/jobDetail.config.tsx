@@ -3,9 +3,11 @@ export const jobDetailConfig = {
     {
       slug: "marketing-specialist",
       title: "Marketing Specialist",
-      shortDescription: "Craft compelling campaigns, drive brand presence, and shape our market position with strategic marketing initiatives.",
+      shortDescription:
+        "Craft compelling campaigns, drive brand presence, and shape our market position with strategic marketing initiatives.",
       details: {
-        description: "As a Marketing Specialist at Nikka, you will play a pivotal role in shaping our brand presence and driving impactful marketing campaigns. From conceptualization to execution, you will contribute to our dynamic marketing strategy, ensuring a compelling and consistent narrative across various channels.",
+        description:
+          "As a Marketing Specialist at Nikka, you will play a pivotal role in shaping our brand presence and driving impactful marketing campaigns. From conceptualization to execution, you will contribute to our dynamic marketing strategy, ensuring a compelling and consistent narrative across various channels.",
       },
       responsibilities: [
         "Develop and execute innovative marketing campaigns to enhance brand visibility.",
@@ -46,9 +48,11 @@ export const jobDetailConfig = {
     {
       slug: "software-engineer",
       title: "Software Engineer",
-      shortDescription: "Innovate and develop cutting-edge solutions, contributing to the technological backbone of our forward-thinking projects.",
+      shortDescription:
+        "Innovate and develop cutting-edge solutions, contributing to the technological backbone of our forward-thinking projects.",
       details: {
-        description: "As a Software Engineer at Nikka, you will be at the forefront of innovation, developing cutting-edge solutions that power our forward-thinking projects. You'll work with modern technologies and collaborate with talented teams to build scalable, efficient, and robust software systems.",
+        description:
+          "As a Software Engineer at Nikka, you will be at the forefront of innovation, developing cutting-edge solutions that power our forward-thinking projects. You'll work with modern technologies and collaborate with talented teams to build scalable, efficient, and robust software systems.",
       },
       responsibilities: [
         "Design, develop, and maintain high-quality software solutions.",
@@ -89,9 +93,11 @@ export const jobDetailConfig = {
     {
       slug: "customer-success-manager",
       title: "Customer Success Manager",
-      shortDescription: "Foster client relationships, ensuring satisfaction and success through personalized support and strategic guidance.",
+      shortDescription:
+        "Foster client relationships, ensuring satisfaction and success through personalized support and strategic guidance.",
       details: {
-        description: "As a Customer Success Manager at Nikka, you will be the primary point of contact for our valued clients, ensuring their success and satisfaction. You'll build strong relationships, provide strategic guidance, and work proactively to help clients achieve their goals with our solutions.",
+        description:
+          "As a Customer Success Manager at Nikka, you will be the primary point of contact for our valued clients, ensuring their success and satisfaction. You'll build strong relationships, provide strategic guidance, and work proactively to help clients achieve their goals with our solutions.",
       },
       responsibilities: [
         "Build and maintain strong relationships with key clients and stakeholders.",
@@ -132,9 +138,11 @@ export const jobDetailConfig = {
     {
       slug: "financial-analyst",
       title: "Financial Analyst",
-      shortDescription: "Analyze fiscal data, provide insights, and contribute to the financial health and growth of our organization.",
+      shortDescription:
+        "Analyze fiscal data, provide insights, and contribute to the financial health and growth of our organization.",
       details: {
-        description: "As a Financial Analyst at Nikka, you will play a crucial role in analyzing financial data, providing actionable insights, and supporting strategic decision-making. You'll work closely with leadership to drive the financial health and sustainable growth of our organization.",
+        description:
+          "As a Financial Analyst at Nikka, you will play a crucial role in analyzing financial data, providing actionable insights, and supporting strategic decision-making. You'll work closely with leadership to drive the financial health and sustainable growth of our organization.",
       },
       responsibilities: [
         "Analyze financial data and create detailed reports for management.",
@@ -173,47 +181,60 @@ export const jobDetailConfig = {
       },
     },
   ],
-}
+};
 
 export const jobDetailStyles = {
   hero: {
-    container: "w-full border-b border-border flex flex-col justify-center items-stretch py-12 sm:py-16 md:py-20 lg:py-24",
-    content: "w-full px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col justify-center items-center gap-4 sm:gap-6",
-    badge: "inline-flex px-2 py-0.5 bg-transparent border border-[#2D2926] text-[#2D2926] text-[10px] font-semibold leading-tight font-sans tracking-wider uppercase rounded-none",
-    headline: "text-[#2D2926] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-tight tracking-tight font-sans text-center max-w-4xl",
-    subtitle: "text-[#666666] text-base sm:text-lg md:text-xl font-normal leading-relaxed font-sans text-center max-w-3xl",
+    container:
+      "w-full border-b border-border flex flex-col justify-center items-stretch py-12 sm:py-16 md:py-20 lg:py-24",
+    content:
+      "w-full px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col justify-center items-center gap-4 sm:gap-6",
+    badge:
+      "inline-flex px-2 py-0.5 bg-transparent border border-[#2D2926] text-[#2D2926] text-[10px] font-semibold leading-tight font-sans tracking-wider uppercase rounded-none",
+    headline:
+      "text-[#2D2926] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-tight tracking-tight font-sans text-center max-w-4xl",
+    subtitle:
+      "text-[#666666] text-base sm:text-lg md:text-xl font-normal leading-relaxed font-sans text-center max-w-3xl",
   },
   content: {
-    container: "w-full px-4 sm:px-6 md:px-12 lg:px-32 py-12 sm:py-16 md:py-20 lg:py-24",
+    container:
+      "w-full px-4 sm:px-6 md:px-12 lg:px-32 py-12 sm:py-16 md:py-20 lg:py-24",
     layout: "flex flex-col lg:flex-row gap-8 lg:gap-12",
     mainContent: "flex-1 flex flex-col gap-12 sm:gap-16",
     sidebar: "w-full lg:w-[320px] flex-shrink-0",
   },
   section: {
     container: "flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12",
-    title: "text-[#2D2926] text-xs sm:text-sm font-semibold leading-tight font-sans tracking-wider uppercase w-full md:w-[200px] lg:w-[240px] flex-shrink-0",
+    title:
+      "text-[#2D2926] text-xs sm:text-sm font-semibold leading-tight font-sans tracking-wider uppercase w-full md:w-[200px] lg:w-[240px] flex-shrink-0",
     content: "flex flex-col gap-4 flex-1",
     text: "text-[#666666] text-sm sm:text-base leading-relaxed font-sans",
     list: "flex flex-col gap-3",
-    listItem: "flex gap-3 text-[#666666] text-sm sm:text-base leading-relaxed font-sans",
+    listItem:
+      "flex gap-3 text-[#666666] text-sm sm:text-base leading-relaxed font-sans",
     bullet: "text-[#2D2926] mt-1.5 flex-shrink-0",
   },
   detailsCard: {
     container: "sticky top-32 bg-[#F5F5F3] p-6 sm:p-8 flex flex-col gap-6",
-    title: "text-[#2D2926] text-xs sm:text-sm font-semibold leading-tight font-sans tracking-wider uppercase border-b border-[#E5E5E5] pb-4",
+    title:
+      "text-[#2D2926] text-xs sm:text-sm font-semibold leading-tight font-sans tracking-wider uppercase border-b border-[#E5E5E5] pb-4",
     detailsList: "flex flex-col gap-4",
     detailItem: "flex items-start gap-3",
     detailIcon: "w-5 h-5 text-[#2D2926] flex-shrink-0 mt-0.5",
     detailText: "flex flex-col gap-0.5",
-    detailValue: "text-[#2D2926] text-sm sm:text-base font-medium leading-tight font-sans",
+    detailValue:
+      "text-[#2D2926] text-sm sm:text-base font-medium leading-tight font-sans",
     detailLabel: "text-[#666666] text-xs font-normal leading-tight font-sans",
     divider: "h-px bg-[#E5E5E5] my-2",
     contactSection: "flex flex-col gap-3",
-    contactTitle: "text-[#2D2926] text-xs sm:text-sm font-semibold leading-tight font-sans tracking-wider uppercase",
+    contactTitle:
+      "text-[#2D2926] text-xs sm:text-sm font-semibold leading-tight font-sans tracking-wider uppercase",
     contactCard: "flex items-center gap-3",
     contactImage: "w-12 h-12 rounded-full object-cover flex-shrink-0",
     contactInfo: "flex flex-col",
-    contactName: "text-[#2D2926] text-sm sm:text-base font-medium leading-tight font-sans",
-    contactRole: "text-[#666666] text-xs font-normal leading-tight font-sans tracking-wider uppercase",
+    contactName:
+      "text-[#2D2926] text-sm sm:text-base font-medium leading-tight font-sans",
+    contactRole:
+      "text-[#666666] text-xs font-normal leading-tight font-sans tracking-wider uppercase",
   },
-}
+};

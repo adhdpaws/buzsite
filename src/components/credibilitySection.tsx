@@ -1,13 +1,24 @@
-import { credibilityConfig, credibilityStyles } from "@/config/credibility.config"
-import { Badge } from "./credibility/Badge"
-import { CredibilityHeader } from "./credibility/CredibilityHeader"
-import { LogoGrid } from "./credibility/LogoGrid"
+import {
+  credibilityConfig,
+  credibilityStyles,
+} from "@/config/credibility.config";
+import { Badge } from "./credibility/Badge";
+import { CredibilityHeader } from "./credibility/CredibilityHeader";
+import { LogoGrid } from "./credibility/LogoGrid";
 
 export default function CredibilitySection() {
   return (
-    <section className={credibilityStyles.container} aria-label="Trusted partners and clients">
+    <section
+      className={credibilityStyles.container}
+      aria-label="Trusted partners and clients"
+    >
       <CredibilityHeader
-        badge={<Badge icon={credibilityConfig.badge.icon} text={credibilityConfig.badge.text} />}
+        badge={
+          <Badge
+            icon={credibilityConfig.badge.icon}
+            text={credibilityConfig.badge.text}
+          />
+        }
         title={credibilityConfig.header.title}
         subtitle={credibilityConfig.header.subtitle}
       />
@@ -18,5 +29,5 @@ export default function CredibilitySection() {
         desktopCols={credibilityConfig.grid.desktopCols}
       />
     </section>
-  )
+  );
 }

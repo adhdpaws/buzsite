@@ -1,17 +1,17 @@
-import { credibilityStyles } from "@/config/credibility.config"
-import { LogoItem } from "./LogoItem"
-import { DecorativePattern } from "./DecorativePattern"
+import { credibilityStyles } from "@/config/credibility.config";
+import { LogoItem } from "./LogoItem";
+import { DecorativePattern } from "./DecorativePattern";
 
 interface Partner {
-  name: string
-  logo: string
-  url: string
+  name: string;
+  logo: string;
+  url: string;
 }
 
 interface LogoGridProps {
-  partners: Partner[]
-  mobileCols: number
-  desktopCols: number
+  partners: Partner[];
+  mobileCols: number;
+  desktopCols: number;
 }
 
 export function LogoGrid({ partners, mobileCols, desktopCols }: LogoGridProps) {
@@ -36,5 +36,5 @@ export function LogoGrid({ partners, mobileCols, desktopCols }: LogoGridProps) {
 
       <DecorativePattern />
     </div>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import { credibilityStyles } from "@/config/credibility.config"
-import type { ReactNode } from "react"
+import { credibilityStyles } from "@/config/credibility.config";
+import type { ReactNode } from "react";
 
 interface BadgeProps {
-  icon: ReactNode
-  text: string
+  icon: ReactNode;
+  text: string;
 }
 
 export function Badge({ icon, text }: BadgeProps) {
@@ -12,5 +12,5 @@ export function Badge({ icon, text }: BadgeProps) {
       <div className={credibilityStyles.badge.icon}>{icon}</div>
       <div className={credibilityStyles.badge.text}>{text}</div>
     </div>
-  )
+  );
 }

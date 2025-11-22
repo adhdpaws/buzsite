@@ -1,24 +1,26 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { faqStyles } from "@/config/faq.config"
-import { FAQItem } from "./FAQItem"
+import { useState } from "react";
+import { faqStyles } from "@/config/faq.config";
+import { FAQItem } from "./FAQItem";
 
 interface FAQ {
-  question: string
-  answer: string
+  question: string;
+  answer: string;
 }
 
 interface FAQListProps {
-  faqs: FAQ[]
+  faqs: FAQ[];
 }
 
 export function FAQList({ faqs }: FAQListProps) {
-  const [openItems, setOpenItems] = useState<number[]>([])
+  const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
-    setOpenItems((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]))
-  }
+    setOpenItems((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
+    );
+  };
 
   return (
     <div className={faqStyles.faqList.container}>
@@ -35,5 +37,5 @@ export function FAQList({ faqs }: FAQListProps) {
         ))}
       </div>
     </div>
-  )
+  );
 }

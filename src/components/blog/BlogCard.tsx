@@ -1,21 +1,21 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 export interface BlogCardProps {
-  image: string
-  title: string
-  description: string
-  category: string
-  slug: string
+  image: string;
+  title: string;
+  description: string;
+  category: string;
+  slug: string;
   styles: {
-    card: string
-    imageWrapper: string
-    image: string
-    content: string
-    title: string
-    description: string
-    category: string
-  }
+    card: string;
+    imageWrapper: string;
+    image: string;
+    content: string;
+    title: string;
+    description: string;
+    category: string;
+  };
 }
 
 export function BlogCard({
@@ -43,5 +43,5 @@ export function BlogCard({
         <span className={styles.category}>{category}</span>
       </div>
     </Link>
-  )
+  );
 }

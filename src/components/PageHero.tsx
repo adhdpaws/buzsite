@@ -1,16 +1,16 @@
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 
 export interface PageHeroProps {
-  badge: string
-  headline: string
-  subtitle: string
+  badge: string;
+  headline: string;
+  subtitle: string;
   styles: {
-    container: string
-    content: string
-    badge: string
-    headline: string
-    subtitle: string
-  }
+    container: string;
+    content: string;
+    badge: string;
+    headline: string;
+    subtitle: string;
+  };
 }
 
 export function PageHero({ badge, headline, subtitle, styles }: PageHeroProps) {
@@ -24,5 +24,5 @@ export function PageHero({ badge, headline, subtitle, styles }: PageHeroProps) {
         <p className={styles.subtitle}>{subtitle}</p>
       </div>
     </section>
-  )
+  );
 }

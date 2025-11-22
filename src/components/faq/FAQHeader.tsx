@@ -1,8 +1,8 @@
-import { faqStyles } from "@/config/faq.config"
+import { faqStyles } from "@/config/faq.config";
 
 interface FAQHeaderProps {
-  title: string
-  subtitle: string
+  title: string;
+  subtitle: string;
 }
 
 export function FAQHeader({ title, subtitle }: FAQHeaderProps) {
@@ -11,5 +11,5 @@ export function FAQHeader({ title, subtitle }: FAQHeaderProps) {
       <h2 className={faqStyles.header.title}>{title}</h2>
       <p className={faqStyles.header.subtitle}>{subtitle}</p>
     </div>
-  )
+  );
 }

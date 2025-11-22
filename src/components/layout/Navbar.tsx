@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { navbarConfig, navbarStyles } from "@/config/navbar.config"
-import { NavbarWrapper } from "./NavbarWrapper"
-import { NavbarClient } from "./NavbarClient"
+import Link from "next/link";
+import { navbarConfig, navbarStyles } from "@/config/navbar.config";
+import { NavbarWrapper } from "./NavbarWrapper";
+import { NavbarClient } from "./NavbarClient";
 
 export function Navbar() {
   return (
@@ -53,6 +53,5 @@ export function Navbar() {
         />
       </div>
     </NavbarWrapper>
-  )
+  );
 }
-

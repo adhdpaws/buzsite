@@ -1,21 +1,21 @@
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 interface ServiceCardProps {
-  title: string
-  description: string
+  title: string;
+  description: string;
   link: {
-    text: string
-    url: string
-  }
+    text: string;
+    url: string;
+  };
   styles: {
-    container: string
-    contentWrapper: string
-    title: string
-    description: string
-    link: string
-    linkArrow: string
-  }
+    container: string;
+    contentWrapper: string;
+    title: string;
+    description: string;
+    link: string;
+    linkArrow: string;
+  };
 }
 
 export function ServiceCard({
@@ -35,5 +35,5 @@ export function ServiceCard({
         <ArrowRight className={styles.linkArrow} />
       </Link>
     </article>
-  )
+  );
 }

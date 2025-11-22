@@ -2,7 +2,8 @@
 export const faqConfig = {
   header: {
     title: "Frequently Asked Questions",
-    subtitle: "Find answers to common questions about our educational technology solutions and services.",
+    subtitle:
+      "Find answers to common questions about our educational technology solutions and services.",
   },
 
   faqs: [
@@ -37,32 +38,37 @@ export const faqConfig = {
         "Getting started is easy! Book a demo to discuss your requirements, and our team will create a customized solution for your needs. We provide onboarding support and training to ensure a smooth implementation.",
     },
   ],
-}
+};
 
 // Styling Configuration - Central place to modify styling
 export const faqStyles = {
   container: "w-full flex justify-center items-start",
-  
-  innerContainer: "flex-1 px-4 md:px-12 py-16 md:py-20 flex flex-col lg:flex-row justify-start items-start gap-6 lg:gap-12",
-  
+
+  innerContainer:
+    "flex-1 px-4 md:px-12 py-16 md:py-20 flex flex-col lg:flex-row justify-start items-start gap-6 lg:gap-12",
+
   header: {
-    container: "w-full lg:flex-1 flex flex-col justify-center items-start gap-4 lg:py-5",
-    title: "w-full flex flex-col justify-center text-[#2D2926] font-semibold leading-tight md:leading-[44px] font-sans text-4xl tracking-tight",
+    container:
+      "w-full lg:flex-1 flex flex-col justify-center items-start gap-4 lg:py-5",
+    title:
+      "w-full flex flex-col justify-center text-[#2D2926] font-semibold leading-tight md:leading-[44px] font-sans text-4xl tracking-tight",
     subtitle: "w-full text-[#3D3935] text-base font-normal leading-7 font-sans",
   },
-  
+
   faqList: {
     container: "w-full lg:flex-1 flex flex-col justify-center items-center",
     wrapper: "w-full flex flex-col",
   },
-  
+
   faqItem: {
     container: "w-full border-b border-[rgba(55,50,47,0.16)] overflow-hidden",
-    button: "w-full px-5 py-[18px] flex justify-between items-center gap-5 text-left hover:bg-[rgba(73,66,61,0.02)] transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+    button:
+      "w-full px-5 py-[18px] flex justify-between items-center gap-5 text-left hover:bg-[rgba(73,66,61,0.02)] transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
     question: "flex-1 text-[#2D2926] text-base font-medium leading-6 font-sans",
     iconContainer: "flex justify-center items-center",
     icon: "w-6 h-6 text-[rgba(73,66,61,0.60)] transition-transform duration-300 ease-in-out",
     answerWrapper: "overflow-hidden transition-all duration-300 ease-in-out",
-    answer: "px-5 pb-[18px] text-[#3D3935] text-sm font-normal leading-6 font-sans",
+    answer:
+      "px-5 pb-[18px] text-[#3D3935] text-sm font-normal leading-6 font-sans",
   },
-}
+};

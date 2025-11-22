@@ -1,27 +1,31 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { MobileMenuButton } from "./MobileMenuButton"
-import { MobileMenu } from "./MobileMenu"
+import { useState } from "react";
+import { MobileMenuButton } from "./MobileMenuButton";
+import { MobileMenu } from "./MobileMenu";
 
 interface NavbarClientProps {
   navigation: Array<{
-    label: string
-    href: string
+    label: string;
+    href: string;
     dropdownItems?: Array<{
-      label: string
-      href: string
-    }>
-  }>
-  brandName: string
+      label: string;
+      href: string;
+    }>;
+  }>;
+  brandName: string;
   cta: {
-    label: string
-    href: string
-  }
+    label: string;
+    href: string;
+  };
 }
 
-export function NavbarClient({ navigation, brandName, cta }: NavbarClientProps) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+export function NavbarClient({
+  navigation,
+  brandName,
+  cta,
+}: NavbarClientProps) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <>
@@ -34,5 +38,5 @@ export function NavbarClient({ navigation, brandName, cta }: NavbarClientProps) 
         cta={cta}
       />
     </>
-  )
+  );
 }

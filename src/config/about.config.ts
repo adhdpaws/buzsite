@@ -6,7 +6,7 @@ export const aboutPageConfig = {
     subtitle:
       "We are a team of passionate designers, developers, and strategists dedicated to creating exceptional digital experiences that drive business growth.",
   },
-}
+};
 
 // About Page Styling Configuration
 export const aboutPageStyles = {
@@ -22,4 +22,4 @@ export const aboutPageStyles = {
     subtitle:
       "text-[#3D3935] text-base sm:text-lg md:text-xl font-normal leading-relaxed font-sans max-w-3xl text-center sm:text-left",
   },
-}
+};

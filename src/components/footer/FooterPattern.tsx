@@ -1,4 +1,4 @@
-import { footerStyles } from "@/config/footer.config"
+import { footerStyles } from "@/config/footer.config";
 
 export function FooterPattern() {
   return (
@@ -20,5 +20,5 @@ export function FooterPattern() {
         </div>
       </div>
     </div>
-  )
+  );
 }

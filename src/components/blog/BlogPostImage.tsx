@@ -1,13 +1,13 @@
-import Image from "next/image"
+import Image from "next/image";
 
 interface BlogPostImageProps {
-  image: string
-  alt: string
+  image: string;
+  alt: string;
   styles: {
-    container: string
-    imageWrapper: string
-    image: string
-  }
+    container: string;
+    imageWrapper: string;
+    image: string;
+  };
 }
 
 export function BlogPostImage({ image, alt, styles }: BlogPostImageProps) {
@@ -24,5 +24,5 @@ export function BlogPostImage({ image, alt, styles }: BlogPostImageProps) {
         />
       </div>
     </section>
-  )
+  );
 }

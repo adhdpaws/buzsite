@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { useState, useMemo } from "react"
-import { PageHero } from "@/components/PageHero"
-import { BlogFilter } from "@/components/blog/BlogFilter"
-import { BlogGrid } from "@/components/blog/BlogGrid"
-import { blogPageConfig, blogPageStyles } from "@/config/blogPage.config"
-import { posts } from "#site/content"
+import { useState, useMemo } from "react";
+import { PageHero } from "@/components/PageHero";
+import { BlogFilter } from "@/components/blog/BlogFilter";
+import { BlogGrid } from "@/components/blog/BlogGrid";
+import { blogPageConfig, blogPageStyles } from "@/config/blogPage.config";
+import { posts } from "#site/content";
 
 export default function BlogPage() {
-  const [activeCategory, setActiveCategory] = useState("all")
+  const [activeCategory, setActiveCategory] = useState("all");
 
   // Transform Velite posts to match BlogGrid interface
   const transformedPosts = useMemo(() => {
@@ -20,20 +20,20 @@ export default function BlogPage() {
         description: post.description || "",
         category: post.category || "Uncategorized",
         slug: post.slug,
-      }))
-  }, [])
+      }));
+  }, []);
 
   // Filter posts based on active category
   const filteredPosts = useMemo(() => {
     if (activeCategory === "all") {
-      return transformedPosts
+      return transformedPosts;
     }
     return transformedPosts.filter((post) =>
       post.category
         .toLowerCase()
-        .includes(activeCategory.toLowerCase().replace(/-/g, " "))
-    )
-  }, [activeCategory, transformedPosts])
+        .includes(activeCategory.toLowerCase().replace(/-/g, " ")),
+    );
+  }, [activeCategory, transformedPosts]);
 
   return (
     <main className="flex flex-col">
@@ -53,5 +53,5 @@ export default function BlogPage() {
 
       <BlogGrid posts={filteredPosts} styles={blogPageStyles.grid} />
     </main>
-  )
+  );
 }

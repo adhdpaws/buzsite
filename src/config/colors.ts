@@ -89,7 +89,7 @@ export const colors = {
       ringOffset: "#FFFFFF", // White focus ring offset
     },
   },
-} as const
+} as const;
 
 // Helper function to get Tailwind classes for text colors
 export const textColors = {
@@ -98,7 +98,7 @@ export const textColors = {
   tertiary: "text-[#737373]",
   muted: "text-[#737373]",
   inverse: "text-white",
-} as const
+} as const;
 
 // Helper function to get Tailwind classes for background colors
 export const bgColors = {
@@ -106,11 +106,11 @@ export const bgColors = {
   secondary: "bg-[#FAFAFA]",
   tertiary: "bg-[#F5F5F5]",
   accent: "bg-[#FEF3C7]",
-} as const
+} as const;
 
 // Helper function to get Tailwind classes for border colors
 export const borderColors = {
   light: "border-[#E5E5E5]",
   medium: "border-[#D4D4D4]",
   dark: "border-[#A3A3A3]",
-} as const
+} as const;

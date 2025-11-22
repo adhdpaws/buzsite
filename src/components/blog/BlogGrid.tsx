@@ -1,20 +1,20 @@
-import { BlogCard, type BlogCardProps } from "./BlogCard"
+import { BlogCard, type BlogCardProps } from "./BlogCard";
 
 interface BlogPost {
-  image: string
-  title: string
-  description: string
-  category: string
-  slug: string
+  image: string;
+  title: string;
+  description: string;
+  category: string;
+  slug: string;
 }
 
 interface BlogGridProps {
-  posts: BlogPost[]
+  posts: BlogPost[];
   styles: {
-    container: string
-    grid: string
-    card: BlogCardProps["styles"]
-  }
+    container: string;
+    grid: string;
+    card: BlogCardProps["styles"];
+  };
 }
 
 export function BlogGrid({ posts, styles }: BlogGridProps) {
@@ -34,5 +34,5 @@ export function BlogGrid({ posts, styles }: BlogGridProps) {
         ))}
       </div>
     </section>
-  )
+  );
 }

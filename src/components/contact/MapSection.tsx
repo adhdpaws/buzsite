@@ -1,9 +1,9 @@
 interface MapSectionProps {
-  embedUrl: string
+  embedUrl: string;
   styles: {
-    container: string
-    iframe: string
-  }
+    container: string;
+    iframe: string;
+  };
 }
 
 export function MapSection({ embedUrl, styles }: MapSectionProps) {
@@ -18,5 +18,5 @@ export function MapSection({ embedUrl, styles }: MapSectionProps) {
         title="Our Location Map"
       />
     </section>
-  )
+  );
 }

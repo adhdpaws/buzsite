@@ -1,27 +1,27 @@
-import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react"
+import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 
 interface ContactInfo {
   callCenter: {
-    title: string
-    phones: string[]
-  }
+    title: string;
+    phones: string[];
+  };
   location: {
-    title: string
-    addresses: string[]
-  }
+    title: string;
+    addresses: string[];
+  };
   email: {
-    title: string
-    address: string
-  }
+    title: string;
+    address: string;
+  };
   social: {
-    title: string
-    links: Array<{ name: string; url: string; icon: string }>
-  }
+    title: string;
+    links: Array<{ name: string; url: string; icon: string }>;
+  };
 }
 
 interface MobileContactInfoProps {
-  contactInfo: ContactInfo
-  styles: any
+  contactInfo: ContactInfo;
+  styles: any;
 }
 
 const socialIcons = {
@@ -29,9 +29,12 @@ const socialIcons = {
   twitter: Twitter,
   linkedin: Linkedin,
   youtube: Youtube,
-}
+};
 
-export function MobileContactInfo({ contactInfo, styles }: MobileContactInfoProps) {
+export function MobileContactInfo({
+  contactInfo,
+  styles,
+}: MobileContactInfoProps) {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -41,11 +44,7 @@ export function MobileContactInfo({ contactInfo, styles }: MobileContactInfoProp
             <h3 className={styles.title}>{contactInfo.callCenter.title}</h3>
             <div className={styles.textGroup}>
               {contactInfo.callCenter.phones.map((phone, index) => (
-                <a
-                  key={index}
-                  href={`tel:${phone}`}
-                  className={styles.text}
-                >
+                <a key={index} href={`tel:${phone}`} className={styles.text}>
                   {phone}
                 </a>
               ))}
@@ -77,5 +76,5 @@ export function MobileContactInfo({ contactInfo, styles }: MobileContactInfoProp
         </div>
       </div>
     </section>
-  )
+  );
 }

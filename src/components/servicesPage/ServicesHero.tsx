@@ -1,21 +1,26 @@
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 
 interface ServicesHeroProps {
   badge: {
-    text: string
-  }
-  headline: string
-  subtitle: string
+    text: string;
+  };
+  headline: string;
+  subtitle: string;
   styles: {
-    container: string
-    content: string
-    badge: string
-    headline: string
-    subtitle: string
-  }
+    container: string;
+    content: string;
+    badge: string;
+    headline: string;
+    subtitle: string;
+  };
 }
 
-export function ServicesHero({ badge, headline, subtitle, styles }: ServicesHeroProps) {
+export function ServicesHero({
+  badge,
+  headline,
+  subtitle,
+  styles,
+}: ServicesHeroProps) {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -26,5 +31,5 @@ export function ServicesHero({ badge, headline, subtitle, styles }: ServicesHero
         <p className={styles.subtitle}>{subtitle}</p>
       </div>
     </section>
-  )
+  );
 }

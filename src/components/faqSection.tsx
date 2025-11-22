@@ -1,11 +1,11 @@
-import { faqConfig, faqStyles } from "@/config/faq.config"
-import { FAQHeader } from "./faq/FAQHeader"
+import { faqConfig, faqStyles } from "@/config/faq.config";
+import { FAQHeader } from "./faq/FAQHeader";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
 export default function FAQSection() {
   return (
@@ -20,12 +20,16 @@ export default function FAQSection() {
             {faqConfig.header.subtitle}
           </p>
         </div>
-        
+
         {/* Right side - FAQ Accordion */}
         <div className="flex-1 w-full">
           <Accordion type="single" collapsible className="w-full">
             {faqConfig.faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b border-border">
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="border-b border-border"
+              >
                 <AccordionTrigger className="text-left text-[#2D2926] text-base sm:text-lg font-semibold hover:no-underline py-5 sm:py-6 hover:text-[oklch(0.586_0.253_17.585)] transition-colors">
                   {faq.question}
                 </AccordionTrigger>
@@ -38,5 +42,5 @@ export default function FAQSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

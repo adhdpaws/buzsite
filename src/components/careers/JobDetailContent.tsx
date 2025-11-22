@@ -1,31 +1,31 @@
-import { MapPin, DollarSign, Briefcase } from "lucide-react"
-import Image from "next/image"
+import { MapPin, DollarSign, Briefcase } from "lucide-react";
+import Image from "next/image";
 
 interface Job {
-  slug: string
-  title: string
-  shortDescription: string
+  slug: string;
+  title: string;
+  shortDescription: string;
   details: {
-    description: string
-  }
-  responsibilities: string[]
-  qualifications: string[]
-  benefits: string[]
+    description: string;
+  };
+  responsibilities: string[];
+  qualifications: string[];
+  benefits: string[];
   jobDetails: {
-    location: string
-    compensation: string
-    type: string
+    location: string;
+    compensation: string;
+    type: string;
     contact: {
-      name: string
-      role: string
-      image: string
-    }
-  }
+      name: string;
+      role: string;
+      image: string;
+    };
+  };
 }
 
 interface JobDetailContentProps {
-  job: Job
-  styles: any
+  job: Job;
+  styles: any;
 }
 
 export function JobDetailContent({ job, styles }: JobDetailContentProps) {
@@ -146,5 +146,5 @@ export function JobDetailContent({ job, styles }: JobDetailContentProps) {
         </aside>
       </div>
     </div>
-  )
+  );
 }

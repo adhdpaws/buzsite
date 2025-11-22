@@ -1,7 +1,10 @@
-import { servicesPageConfig, servicesPageStyles } from "@/config/servicesPage.config"
-import { PageHero } from "@/components/PageHero"
-import { ServiceNav } from "@/components/servicesPage/ServiceNav"
-import { ServiceDetail } from "@/components/servicesPage/ServiceDetail"
+import {
+  servicesPageConfig,
+  servicesPageStyles,
+} from "@/config/servicesPage.config";
+import { PageHero } from "@/components/PageHero";
+import { ServiceNav } from "@/components/servicesPage/ServiceNav";
+import { ServiceDetail } from "@/components/servicesPage/ServiceDetail";
 
 export default function ServicesPage() {
   return (
@@ -13,7 +16,10 @@ export default function ServicesPage() {
         styles={servicesPageStyles.hero}
       />
 
-      <ServiceNav services={servicesPageConfig.serviceNav} styles={servicesPageStyles.serviceNav} />
+      <ServiceNav
+        services={servicesPageConfig.serviceNav}
+        styles={servicesPageStyles.serviceNav}
+      />
 
       {servicesPageConfig.services.map((service) => (
         <ServiceDetail
@@ -27,5 +33,5 @@ export default function ServicesPage() {
         />
       ))}
     </main>
-  )
+  );
 }

@@ -1,17 +1,17 @@
-import Image from "next/image"
+import Image from "next/image";
 
 interface Logo {
-  name: string
-  src: string
-  alt: string
+  name: string;
+  src: string;
+  alt: string;
 }
 
 interface LogoStripProps {
-  logos: Logo[]
+  logos: Logo[];
   styles: {
-    container: string
-    logo: string
-  }
+    container: string;
+    logo: string;
+  };
 }
 
 export function LogoStrip({ logos, styles }: LogoStripProps) {
@@ -29,5 +29,5 @@ export function LogoStrip({ logos, styles }: LogoStripProps) {
         />
       ))}
     </div>
-  )
+  );
 }

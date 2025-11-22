@@ -1,9 +1,12 @@
-import { servicesConfig, servicesStyles } from "@/config/services.config"
-import { ServicesGrid } from "./services/ServicesGrid"
+import { servicesConfig, servicesStyles } from "@/config/services.config";
+import { ServicesGrid } from "./services/ServicesGrid";
 
 export function ServicesSection() {
   return (
-    <section className={servicesStyles.container} aria-labelledby="services-heading">
+    <section
+      className={servicesStyles.container}
+      aria-labelledby="services-heading"
+    >
       <div className="flex-1 flex flex-col">
         <h2 id="services-heading" className="sr-only">
           Our Services
@@ -15,5 +18,5 @@ export function ServicesSection() {
         />
       </div>
     </section>
-  )
+  );
 }

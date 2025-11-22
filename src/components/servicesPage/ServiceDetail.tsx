@@ -1,33 +1,33 @@
-import { Button } from "@/components/ui/button"
-import { StepsList } from "@/components/common/StepsList"
+import { Button } from "@/components/ui/button";
+import { StepsList } from "@/components/common/StepsList";
 
 interface ServiceStep {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
 interface ServiceDetailProps {
-  id: string
-  title: string
-  subtitle: string
-  description: string
-  steps: ServiceStep[]
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  steps: ServiceStep[];
   styles: {
-    container: string
-    content: string
-    leftCard: string
-    cardHeader: string
-    cardTitle: string
-    cardSubtitle: string
-    cardDescription: string
-    cardButton: string
-    rightFeatures: string
-    featuresTitle: string
-    featuresList: string
-    featureItem: string
-    featureTitle: string
-    featureDescription: string
-  }
+    container: string;
+    content: string;
+    leftCard: string;
+    cardHeader: string;
+    cardTitle: string;
+    cardSubtitle: string;
+    cardDescription: string;
+    cardButton: string;
+    rightFeatures: string;
+    featuresTitle: string;
+    featuresList: string;
+    featureItem: string;
+    featureTitle: string;
+    featureDescription: string;
+  };
 }
 
 export function ServiceDetail({
@@ -48,10 +48,10 @@ export function ServiceDetail({
               <h2 className={styles.cardTitle}>{title}</h2>
               <p className={styles.cardSubtitle}>{subtitle}</p>
             </div>
-            
+
             <p className={styles.cardDescription}>{description}</p>
           </div>
-          
+
           <Button className={styles.cardButton} asChild>
             <a href="/contact">Let's Talk</a>
           </Button>
@@ -59,10 +59,8 @@ export function ServiceDetail({
 
         {/* Right Side - Steps with Descriptions */}
         <div className={styles.rightFeatures}>
-          <h3 className={styles.featuresTitle}>
-            {subtitle}
-          </h3>
-          
+          <h3 className={styles.featuresTitle}>{subtitle}</h3>
+
           <StepsList
             steps={steps}
             styles={{
@@ -75,5 +73,5 @@ export function ServiceDetail({
         </div>
       </div>
     </section>
-  )
+  );
 }

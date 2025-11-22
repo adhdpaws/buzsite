@@ -1,33 +1,33 @@
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 interface Job {
-  id: string
-  title: string
-  description: string
-  type: string
-  location: string
+  id: string;
+  title: string;
+  description: string;
+  type: string;
+  location: string;
 }
 
 interface JobListingProps {
-  jobs: Job[]
+  jobs: Job[];
   styles: {
-    container: string
-    stickyHeader: string
-    headerText: string
-    listContainer: string
+    container: string;
+    stickyHeader: string;
+    headerText: string;
+    listContainer: string;
     jobCard: {
-      container: string
-      content: string
-      leftSection: string
-      title: string
-      description: string
-      rightSection: string
-      metaGroup: string
-      badge: string
-      arrow: string
-    }
-  }
+      container: string;
+      content: string;
+      leftSection: string;
+      title: string;
+      description: string;
+      rightSection: string;
+      metaGroup: string;
+      badge: string;
+      arrow: string;
+    };
+  };
 }
 
 export function JobListing({ jobs, styles }: JobListingProps) {
@@ -48,14 +48,18 @@ export function JobListing({ jobs, styles }: JobListingProps) {
                   {/* Left Section - Title and Description */}
                   <div className={styles.jobCard.leftSection}>
                     <h3 className={styles.jobCard.title}>{job.title}</h3>
-                    <p className={styles.jobCard.description}>{job.description}</p>
+                    <p className={styles.jobCard.description}>
+                      {job.description}
+                    </p>
                   </div>
 
                   {/* Right Section - Job Type, Location, and Arrow */}
                   <div className={styles.jobCard.rightSection}>
                     <div className={styles.jobCard.metaGroup}>
                       <span className={styles.jobCard.badge}>{job.type}</span>
-                      <span className={styles.jobCard.badge}>{job.location}</span>
+                      <span className={styles.jobCard.badge}>
+                        {job.location}
+                      </span>
                     </div>
                     <div className={styles.jobCard.arrow}>
                       <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -68,5 +72,5 @@ export function JobListing({ jobs, styles }: JobListingProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }

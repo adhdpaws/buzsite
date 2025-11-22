@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
-import { Button } from "@/components/ui/button"
+import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -12,9 +12,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
@@ -29,35 +29,35 @@ const formSchema = z.object({
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
-})
+});
 
 interface ContactInfo {
   callCenter: {
-    title: string
-    phones: string[]
-  }
+    title: string;
+    phones: string[];
+  };
   location: {
-    title: string
-    addresses: string[]
-  }
+    title: string;
+    addresses: string[];
+  };
   email: {
-    title: string
-    address: string
-  }
+    title: string;
+    address: string;
+  };
   social: {
-    title: string
-    links: Array<{ name: string; url: string; icon: string }>
-  }
+    title: string;
+    links: Array<{ name: string; url: string; icon: string }>;
+  };
 }
 
 interface ContactHeroProps {
-  badge: string
-  headline: string
-  description: string
-  contactInfo: ContactInfo
-  formTitle: string
-  formSubtitle: string
-  styles: any
+  badge: string;
+  headline: string;
+  description: string;
+  contactInfo: ContactInfo;
+  formTitle: string;
+  formSubtitle: string;
+  styles: any;
 }
 
 const socialIcons = {
@@ -65,7 +65,7 @@ const socialIcons = {
   twitter: Twitter,
   linkedin: Linkedin,
   youtube: Youtube,
-}
+};
 
 export function ContactHero({
   badge,
@@ -84,10 +84,10 @@ export function ContactHero({
       subject: "",
       message: "",
     },
-  })
+  });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+    console.log(values);
     // Handle form submission here
   }
 
@@ -106,7 +106,9 @@ export function ContactHero({
           <div className={`${styles.contactGrid} hidden lg:grid`}>
             {/* Call Center */}
             <div className={styles.contactItem}>
-              <h3 className={styles.contactTitle}>{contactInfo.callCenter.title}</h3>
+              <h3 className={styles.contactTitle}>
+                {contactInfo.callCenter.title}
+              </h3>
               {contactInfo.callCenter.phones.map((phone, index) => (
                 <a
                   key={index}
@@ -120,7 +122,9 @@ export function ContactHero({
 
             {/* Location */}
             <div className={styles.contactItem}>
-              <h3 className={styles.contactTitle}>{contactInfo.location.title}</h3>
+              <h3 className={styles.contactTitle}>
+                {contactInfo.location.title}
+              </h3>
               {contactInfo.location.addresses.map((address, index) => (
                 <p key={index} className={styles.contactText}>
                   {address}
@@ -141,10 +145,13 @@ export function ContactHero({
 
             {/* Social Network */}
             <div className={styles.contactItem}>
-              <h3 className={styles.contactTitle}>{contactInfo.social.title}</h3>
+              <h3 className={styles.contactTitle}>
+                {contactInfo.social.title}
+              </h3>
               <div className={styles.socialLinks}>
                 {contactInfo.social.links.map((link, index) => {
-                  const Icon = socialIcons[link.icon as keyof typeof socialIcons]
+                  const Icon =
+                    socialIcons[link.icon as keyof typeof socialIcons];
                   return (
                     <a
                       key={index}
@@ -156,7 +163,7 @@ export function ContactHero({
                     >
                       <Icon size={20} />
                     </a>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -170,7 +177,10 @@ export function ContactHero({
             <p className={styles.formSubtitle}>{formSubtitle}</p>
 
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className={styles.formFields}>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className={styles.formFields}
+              >
                 <FormField
                   control={form.control}
                   name="fullName"
@@ -253,5 +263,5 @@ export function ContactHero({
         </div>
       </div>
     </section>
-  )
+  );
 }

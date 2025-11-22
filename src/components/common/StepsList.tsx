@@ -1,16 +1,16 @@
 interface Step {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
 interface StepsListProps {
-  steps: Step[]
+  steps: Step[];
   styles: {
-    container: string
-    item: string
-    title: string
-    description: string
-  }
+    container: string;
+    item: string;
+    title: string;
+    description: string;
+  };
 }
 
 export function StepsList({ steps, styles }: StepsListProps) {
@@ -23,5 +23,5 @@ export function StepsList({ steps, styles }: StepsListProps) {
         </div>
       ))}
     </div>
-  )
+  );
 }
